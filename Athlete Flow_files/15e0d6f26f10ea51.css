@@ -2890,3 +2890,56 @@ body {
   background-color: #ead3b9 !important;
   background: #ead3b9 !important;
 }
+/* Styles pour le texte des boutons standards (sauf "Inscription") */
+.custom-button-text {
+  color: #ead3b9; /* Couleur de base : beige clair */
+}
+
+.group:hover .custom-button-text {
+  color: #452916; /* Couleur au survol : marron foncé */
+}
+
+/* Styles pour les icônes des boutons standards */
+.custom-button-icon {
+  fill: #ead3b9;   /* Couleur de base du remplissage de l'icône */
+  stroke: #ead3b9; /* Couleur de base du contour de l'icône */
+}
+
+.group:hover .custom-button-icon {
+  fill: #452916;   /* Couleur du remplissage de l'icône au survol */
+  stroke: #452916; /* Couleur du contour de l'icône au survol */
+}
+
+/* Styles spécifiques pour le texte du bouton "Inscription" */
+.inscription-button-text {
+  color: #452916; /* Couleur de base du texte "Inscription" : marron foncé */
+}
+
+.group:hover .inscription-button-text {
+  color: #ead3b9; /* Couleur du texte "Inscription" au survol : beige clair */
+  background-color: #452916; /* Couleur d'arrière-plan du texte "Inscription" au survol : marron foncé */
+}
+/* 1. Ajuster la couleur du texte "Inscription" par défaut pour être visible */
+.inscription-button-text {
+  color: #ead3b9 !important; /* Texte blanc par défaut */
+}
+
+/* 2. Inverser les couleurs au survol pour le bouton "Inscription" */
+/* Modifier la couleur de fond principale du bouton au survol */
+a.group[href="#"]:hover {
+  background-color: #ead3b9 !important; /* Fond blanc pour le bouton principal */
+  border-color: rgb(var(--primary)) !important; /* Couleur de la bordure marron foncé au survol */
+}
+
+/* Modifier la couleur du texte "Inscription" au survol */
+.group:hover .inscription-button-text {
+  color: rgb(var(--primary)) !important; /* Texte marron foncé au survol */
+  background-color: transparent !important; /* S'assurer qu'aucun fond n'est appliqué directement au texte */
+}
+
+/* 3. Modifier la couleur du dégradé de fond glissant au survol pour le bouton "Inscription" */
+/* Cible le deuxième span (l'élément glissant) à l'intérieur du bouton */
+a.group[href="#"] > span:last-child {
+    background-image: none !important; /* Supprimer le dégradé existant */
+    background-color: #ead3b9 !important; /* Définir un fond blanc solide pour l'élément glissant */
+}
