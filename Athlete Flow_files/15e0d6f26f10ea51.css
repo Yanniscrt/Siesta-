@@ -2996,13 +2996,13 @@ a.group[href="#"] > span:last-child {
   height: auto; /* Laisse le bouton définir sa hauteur naturelle */
 }
 
-/* Optionnel: pour les écrans plus petits, les images pourraient être trop grandes. */
-/* Vous pouvez les cacher ou réduire leur taille sur mobile. */
 @media (max-width: 768px) {
   .hero-side-image {
-    /* display: none; */ /* Cette ligne a été commentée/supprimée pour que les images soient visibles sur mobile */
-    /* Ou vous pouvez réduire leur taille: */
-    /* height: 40px; */
-    /* width: auto; */
+    /* display: none; */ /* Cette ligne doit rester commentée ou supprimée pour que les images soient visibles */
+    height: 60px; /* Exemple: réduit la hauteur des images sur mobile */
+    width: auto; /* Maintient les proportions */
+    /* Ou vous pouvez utiliser max-width et max-height */
+    /* max-width: 100px; */
+    /* max-height: 80px; */
   }
 }
