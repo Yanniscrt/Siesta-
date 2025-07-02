@@ -2996,7 +2996,7 @@ a.group[href="#"] > span:last-child {
   height: auto; /* Laisse le bouton définir sa hauteur naturelle */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .hero-side-image {
     /* display: none; */ /* Cette ligne doit rester commentée ou supprimée pour que les images soient visibles */
     height: 60px; /* Exemple: réduit la hauteur des images sur mobile */
